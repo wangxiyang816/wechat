@@ -1,0 +1,24 @@
+<view class="item">
+    <view class="item-pic">
+        <image src="{{movie.images.large}}" />
+    </view>
+   
+   <view class="meta">
+                <text class="title">{{movie.title}}({{movie.year}})</text>
+                <view class="artists">
+                    <text class="inner-title">导演：</text><text wx:for="{{movie.directors}}" class="inner"> {{item.name}} </text>
+                </view>
+                <view class="casts">
+                    <text class="inner-title">主演：</text><text wx:for="{{movie.casts}}" class="inner">{{item.name}}  </text>
+                </view>
+                <view class="area">
+                    <text class="inner-title">地区：</text><text wx:for="{{movie.countries}}" class="inner">{{item}} </text>
+                </view>
+                <view class="genres">
+                    <text class="inner-title">类型：</text><text wx:for="{{movie.genres}}" class="inner">{{item}} </text>
+                </view>
+                <view class="intr">
+                    <text class="inner-title">剧情简介：<text class="intr-text inner">{{movie.summary}}</text></text>
+                </view>
+    </view>
+</view>

@@ -1,0 +1,37 @@
+.item{
+   
+}
+.item-pic{
+    width:100%;
+    height:100%;
+    display:block;
+    margin:0 auto;
+    padding:20rpx;
+}
+.item-pic image{
+    width:100%;
+    height:800rpx;
+}
+.title{
+    font-size:40rpx;
+    color:#35495E;
+    font-weight:bold;
+    text-align: center;
+}
+.artists,.casts,.area,.genres,.intr{
+    font-size:30rpx;
+    color:#35495E;
+    margin-top:10rpx;
+}
+.intr-text{
+    font-size:28rpx;
+    font-weight:normal;
+}
+.inner-title{
+    font-weight:bold;
+}
+.meta{
+    font-family: "微软雅黑";
+     padding:0 20rpx;
+     margin-top:30rpx;
+}

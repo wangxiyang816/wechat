@@ -1,0 +1,4 @@
+
+    <import src="../temp/movie.wxml" />
+    <template is="movie-temp" data="{{ movies, loading, hasMore, loadMore }}" />
+

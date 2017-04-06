@@ -1,0 +1,32 @@
+
+
+<template name="movie-temp" class="list">
+<scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <view  wx:for="{{movies}}" wx:for-item="movie">
+        <navigator class="list-item" url="../item/item?id={{movie.id}}">
+            <image class="poster" src="{{movie.images.small}}"></image>
+            <view class="meta">
+                <text class="title">{{movie.title}}({{movie.year}})</text>
+                <view class="artists">
+                    <text>导演：</text><text wx:for="{{movie.directors}}"> {{item.name}} </text>
+                </view>
+                <view class="casts">
+                    <text>主演：</text><text wx:for="{{movie.casts}}">{{item.name}}  </text>
+                </view>
+            </view>
+            <view class="rating">
+                <text wx:if="{{movie.rating.average!=0}}" class="rating-score">{{movie.rating.average}}</text>
+                <text wx:else>暂无评分</text>
+            </view>
+        </navigator>
+    </view>
+    <view class="tips">
+      <!--<view wx:if="{{hasMore}}"><image src="/images/loading.gif" mode="aspectFill"/><text>加载中...</text></view>-->
+      <view wx:if="{{!hasMore}}" class="no-tips"><text>没有更多内容了</text></view>
+    </view>
+</scroll-view>
+ <loading hidden="{{!loading}}">加载中...</loading>
+</template>
+
+ 
+

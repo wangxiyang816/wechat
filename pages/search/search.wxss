@@ -1,0 +1,64 @@
+
+
+input{
+    background-color:#eee;
+    padding:20rpx;
+}
+.list{
+    font-family: "微软雅黑"；
+}
+.list-item{
+    display:flex;
+    border-top:1px solid #eee;
+    padding:40rpx;
+    background-color:#8B98A7;
+}
+.list-item img{
+    width:100%;
+
+}
+scroll-view{
+    height:550px;
+}
+.title{
+    font-size:30rpx;
+    font-weight:bold;
+}
+.poster{
+    width:100rpx;
+    height:100rpx;
+    flex:.2;
+}
+.meta{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    font-size:25rpx;
+    font-weight:normal;
+    margin-left:30rpx;
+    
+}
+.artists,.casts{
+    margin-top:8rpx;
+}
+.casts{
+    width:380rpx;
+}
+.rating-score{
+    color:#e4393c;
+    font-weight:bold;
+}
+.tips{
+    display:flex;
+
+}
+.tips image{
+    width:100rpx;
+    height:100rpx;
+    flex:0.3;
+}
+.no-tips{
+    color:#35495E;
+    display:block;
+    margin:0 auto;
+}

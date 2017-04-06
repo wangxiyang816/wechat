@@ -1,0 +1,5 @@
+<view>
+    <input placeholder="请输入影人或作品关键词" auto-focus="true" bindinput="inputText" />
+</view>
+<import src="../temp/movie.wxml" />
+<template is="movie-temp" data="{{ movies, loading, hasMore, loadMore }}"   />
